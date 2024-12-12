@@ -1,4 +1,3 @@
-/* Global Styles */
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +11,7 @@ body {
 }
 
 .coming-soon-container {
-  width: 90%; /* Increase width to use more space on mobile */
+  width: 80%;
   margin: 50px auto;
   text-align: center;
 }
@@ -25,7 +24,7 @@ body {
 
 .movie-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Grid responsive to fill space */
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 30px;
   padding: 0 10px;
 }
@@ -37,7 +36,6 @@ body {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   position: relative;
-  cursor: pointer; /* Pointer cursor to indicate clickability */
 }
 
 .movie-item img {
@@ -58,15 +56,13 @@ body {
 }
 
 .movie-item h3 {
-  font-size: 1.5em;
+  font-size: 1.2em;
   margin: 20px 15px 10px;
-  color: #fff; /* Ensure title is readable */
 }
 
 .movie-item p {
   margin: 10px 15px;
   color: #aaa;
-  font-size: 1em; /* Adjust font size for readability */
 }
 
 .movie-item h3 a {
@@ -80,50 +76,18 @@ body {
 }
 
 .movie-item:hover {
-  transform: translateY(-10px) scale(1.05); /* Add scale for smoother hover effect */
+  transform: translateY(-10px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
 }
 
 @media (max-width: 768px) {
-  .coming-soon-container {
-    width: 95%; /* Use more space on tablets */
-  }
-
-  .section-title {
-    font-size: 2em; /* Adjust font size for smaller screens */
-  }
-
-  .movie-item h3 {
-    font-size: 1.2em; /* Slightly smaller title for readability */
-  }
-
-  .movie-item p {
-    font-size: 0.9em; /* Slightly smaller text for mobile */
-  }
-
   .movie-grid {
-    grid-template-columns: 1fr 1fr; /* Two columns for tablet and smaller screens */
+    grid-template-columns: 1fr 1fr;
   }
 }
 
 @media (max-width: 480px) {
-  .coming-soon-container {
-    width: 100%; /* Maximize space on small mobile screens */
-  }
-
-  .section-title {
-    font-size: 1.8em; /* Slightly smaller title on small screens */
-  }
-
-  .movie-item h3 {
-    font-size: 1.1em; /* Make titles smaller on small screens */
-  }
-
-  .movie-item p {
-    font-size: 0.85em; /* Adjust text size for mobile readability */
-  }
-
   .movie-grid {
-    grid-template-columns: 1fr; /* One column for mobile */
+    grid-template-columns: 1fr;
   }
 }
