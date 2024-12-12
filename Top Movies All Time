@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Top 50 Movies</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    .movies-container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .movie-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 15px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .movie-item:last-child {
+      border-bottom: none;
+    }
+
+    .movie-title {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .movie-rating {
+      font-size: 16px;
+      background-color: #007bff;
+      color: #fff;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #333;
+      color: #fff;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Top 50 Movies</h1>
+  <p>The most acclaimed movies of all time</p>
+</header>
+
+<div class="movies-container">
+  <!-- List of Movies -->
+  <div class="movie-item">
+    <span class="movie-title">1. The Shawshank Redemption</span>
+    <span class="movie-rating">⭐⭐⭐⭐⭐</span>
+  </div>
+  <div class="movie-item">
+    <span class="movie-title">2. The Godfather</span>
+    <span class="movie-rating">⭐⭐⭐⭐⭐</span>
+  </div>
+  <div class="movie-item">
+    <span class="movie-title">3. The Dark Knight</span>
+    <span class="movie-rating">⭐⭐⭐⭐⭐</span>
+  </div>
+  <div class="movie-item">
+    <span class="movie-title">4. Pulp Fiction</span>
+    <span class="movie-rating">⭐⭐⭐⭐⭐</span>
+  </div>
+  <div class="movie-item">
+    <span class="movie-title">5. Forrest Gump</span>
+    <span class="movie-rating">⭐⭐⭐⭐⭐</span>
+  </div>
+  <!-- Add more movies -->
+  <div class="movie-item">
+    <span class="movie-title">6. Schindler's List</span>
+    <span class="movie-rating">⭐⭐⭐⭐⭐</span>
+  </div>
+  <div class="movie-item">
+    <span class="movie-title">7. Fight Club</span>
+    <span class="movie-rating">⭐⭐⭐⭐⭐</span>
+  </div>
+  <div class="movie-item">
+    <span class="movie-title">8. Inception</span>
+    <span class="movie-rating">⭐⭐⭐⭐⭐</span>
+  </div>
+  <div class="movie-item">
+    <span class="movie-title">9. The Matrix</span>
+    <span class="movie-rating">⭐⭐⭐⭐</span>
+  </div>
+  <div class="movie-item">
+    <span class="movie-title">10. Goodfellas</span>
+    <span class="movie-rating">⭐⭐⭐⭐⭐</span>
+  </div>
+  <!-- Repeat up to 50 movies -->
+</div>
+
+<footer>
+  <p>&copy; 2024 Top Movie List</p>
+</footer>
+
+</body>
+</html>
