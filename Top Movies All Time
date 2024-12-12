@@ -6,7 +6,7 @@
   <title>Top 50 Movies</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Arial', sans-serif;
       margin: 0;
       padding: 0;
       background-color: #f9f9f9;
@@ -22,6 +22,12 @@
 
     header h1 {
       margin: 0;
+      font-size: 2.5em;
+    }
+
+    header p {
+      font-size: 1.2em;
+      margin-top: 5px;
     }
 
     .movies-container {
@@ -37,8 +43,13 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 10px 15px;
+      padding: 15px;
       border-bottom: 1px solid #ddd;
+      transition: background-color 0.3s;
+    }
+
+    .movie-item:hover {
+      background-color: #f0f0f0;
     }
 
     .movie-item:last-child {
@@ -64,6 +75,24 @@
       background-color: #333;
       color: #fff;
       margin-top: 20px;
+    }
+
+    @media (max-width: 600px) {
+      .movies-container {
+        padding: 10px;
+      }
+
+      header h1 {
+        font-size: 2em;
+      }
+
+      .movie-title {
+        font-size: 16px;
+      }
+
+      .movie-rating {
+        font-size: 14px;
+      }
     }
   </style>
 </head>
@@ -96,7 +125,6 @@
     <span class="movie-title">5. Forrest Gump</span>
     <span class="movie-rating">⭐⭐⭐⭐⭐</span>
   </div>
-  <!-- Add more movies -->
   <div class="movie-item">
     <span class="movie-title">6. Schindler's List</span>
     <span class="movie-rating">⭐⭐⭐⭐⭐</span>
@@ -114,15 +142,4 @@
     <span class="movie-rating">⭐⭐⭐⭐</span>
   </div>
   <div class="movie-item">
-    <span class="movie-title">10. Goodfellas</span>
-    <span class="movie-rating">⭐⭐⭐⭐⭐</span>
-  </div>
-  <!-- Repeat up to 50 movies -->
-</div>
-
-<footer>
-  <p>&copy; 2024 Top Movie List</p>
-</footer>
-
-</body>
-</html>
+   
